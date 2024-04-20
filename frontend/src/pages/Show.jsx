@@ -12,7 +12,7 @@ const Show = () => {
   const{id}=useParams();
 
   useEffect(()=>{
-    axios.get(`http://localhost:8080/reservations/${id}`).then((response)=>{
+    axios.get(`http://localhost:3360/reservations/${id}`).then((response)=>{
       
       const data= response.data;
       if(Array.isArray(response.data) && response.data.length>0){

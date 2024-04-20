@@ -12,7 +12,7 @@ const DeleteReservation=()=>{
   const {id}= useParams();
   const{enqueueSnackbar}=useSnackbar();
   const HandleDelete=()=>{
-     axios.delete(`http://localhost:8080/reservations/${id}`)
+     axios.delete(`http://localhost:3360/reservations/${id}`)
      .then(()=>{
        enqueueSnackbar('Deleted Successfully',{variant:'success'})
        navigate('/reservations');

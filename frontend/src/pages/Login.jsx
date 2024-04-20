@@ -18,7 +18,7 @@ const Login = () => {
       email,password
 
     }
-    const {data}= await axios.post('http://localhost:8080/login',user,
+    const {data}= await axios.post('http://localhost:3360/login',user,
     { withCredentials: true })
 
       const{message,success}=data;

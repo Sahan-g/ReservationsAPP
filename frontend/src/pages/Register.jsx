@@ -25,7 +25,7 @@ const handleClick=async()=>{
 
     }else{
     
-      const {data}= await axios.post('http://localhost:8080/signup',user,
+      const {data}= await axios.post('http://localhost:3360/signup',user,
       { withCredentials: true })
   
         const{message,success}=data;

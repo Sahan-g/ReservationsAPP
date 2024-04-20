@@ -55,7 +55,7 @@ const Create = () => {
         partySize,tableId
       }
     setLoading(true);
-    axios.post ('http://localhost:8080/reservations/',data)
+    axios.post ('http://localhost:3360/reservations/',data)
     .then(()=>{
       console.log(data);
       setLoading(false);

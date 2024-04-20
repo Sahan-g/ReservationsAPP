@@ -18,7 +18,7 @@ import HeaderSec from '../components/HeaderSec';
   const {id}=useParams()
   useEffect(()=>{
     setLoading(true);
-    axios.get(`http://localhost:8080/reservations/customer/${id}`).then((response)=>{
+    axios.get(`http://localhost:3360/reservations/customer/${id}`).then((response)=>{
       setReservations(response.data.data);
       setLoading(false);
       console.log("data fetch complete");

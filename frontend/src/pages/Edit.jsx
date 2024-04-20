@@ -48,7 +48,7 @@ const Edit = () => {
     }
     
     setLoading(true);
-    axios.put (`http://localhost:8080/reservations/${id}`,data)
+    axios.put (`http://localhost:3360/reservations/${id}`,data)
     .then(()=>{
       console.log(data);
       setLoading(false);

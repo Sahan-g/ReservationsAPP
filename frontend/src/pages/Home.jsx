@@ -17,7 +17,7 @@ const Home = () => {
   const [loading,setLoading]= useState(false);
   useEffect(()=>{
     setLoading(true);
-    axios.get('http://localhost:8080/reservations').then((response)=>{
+    axios.get('http://localhost:3360/reservations').then((response)=>{
       setReservations(response.data.data);
       setLoading(false);
       console.log("data fetch complete");
