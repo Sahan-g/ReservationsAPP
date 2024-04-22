@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  client:
+    build: ./backend
+    container_name: backend_cont
+    ports:
+      - "3360:3360"
+    stdin_open: true
+    tty: true
